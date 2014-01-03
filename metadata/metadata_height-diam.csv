@@ -1,0 +1,8 @@
+"variable","units","description","notes"
+"site","","site where sample was taken",""
+"subsite","","",""
+"collector","","who collected sample",""
+"spp","","species name",""
+"height","m","plant height","either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)"
+"diameter","cm","diameter at 10% tree height, or breast height for trees > 20m tall",""
+"sampled","","was individual sampled for biomass and traits?",""

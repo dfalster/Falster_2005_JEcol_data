@@ -1,0 +1,13 @@
+variable,units,description,notes
+spp,,6 letter species code,see species list for translastion
+indiv,,individual,"values 1-3 are were taken from individuals where biomass of terminal meter of stem was also harevtesed (see biomass dataset), while 'x' is used for additional individuals"
+segment,,location of sample. Samples were taken 250mm & 1000mm from tip of a leading branch; and also at base of plant with a small core.,
+length,,length of sample,
+displacement_mass_stem,g,displacement mass of whole stem segment when submerged in water,
+dry_mass_stem,g,dry mass of whole stem segment,
+denisty_stem,g cm-3,stem tissue density,
+dry_mass_bark,g,dry mass of bark,
+displacement_mass_wood,g,displacement mass of wood (stem with bark removed) when submerged in water,
+dry_mass_wood,g,dry mass of wood (stem with bark removed),#NAME?
+denisty_wood,g cm-3,wood density,
+notes,,notes,
