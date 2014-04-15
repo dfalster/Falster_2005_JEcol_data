@@ -1,6 +1,6 @@
 "variable","units","description","notes"
 "site","","site where sample was taken",""
-"subsite","","",""
+"subsite","","location withint site where sample was taken",""
 "collector","","who collected sample",""
 "spp","","species name",""
 "height","m","plant height","either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)"
