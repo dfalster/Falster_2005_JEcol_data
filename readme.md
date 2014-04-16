@@ -140,7 +140,7 @@ Below is a list of the various files provided for this dataset, and the variable
 |spp        |string   |       |species name                                                        |                                                                                                              |
 |height     |numeric  |m      |plant height                                                        |either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)  |
 |diameter   |numeric  |cm     |diameter at 10% tree height, or breast height for trees > 20m tall  |                                                                                                              |
-|sampled    |bool     |       |was individual sampled for biomass and traits?                      |                                                                                                              |
+|sampled    |bool     |       |was individual sampled for biomass and traits                       |                                                                                                              |
 ### branch_biomass.csv 
 
 **contents**: Inidividual-level measuremnts of branch biomass taken from terminal meter of stem
@@ -152,7 +152,7 @@ Below is a list of the various files provided for this dataset, and the variable
 |site                        |string   |           |region where sample was taken                                           |
 |subsite                     |string   |           |local site where sample was taken                                       |
 |spp                         |string   |           |6 letter species code                                                   |
-|ind                         |string   |           |                                                                        |
+|ind                         |numeric  |           |individual                                                              |
 |leaf_type                   |string   |           |leaf type: compound or simple                                           |
 |height                      |numeric  |m          |height of plant                                                         |
 |leaf_size                   |numeric  |mm2        |leaf size                                                               |
@@ -195,7 +195,7 @@ Below is a list of the various files provided for this dataset, and the variable
 |variable      |type     |units    |description                                                                              |
 |:-------------|:--------|:--------|:----------------------------------------------------------------------------------------|
 |spp           |string   |         |species                                                                                  |
-|indiv         |string   |         |individual                                                                               |
+|indiv         |numeric  |         |individual                                                                               |
 |leaf_type     |string   |         |leaf type: simple or compound                                                            |
 |no_leaves     |numeric  |number   |number of leaves sampled                                                                 |
 |total_mass    |numeric  |g        |total mass of leaves                                                                     |
@@ -221,11 +221,11 @@ Below is a list of the various files provided for this dataset, and the variable
 |length                  |numeric  |        |length of sample                                                                                                                  |                                                                                                                                                                            |
 |displacement_mass_stem  |numeric  |g       |displacement mass of whole stem segment when submerged in water                                                                   |                                                                                                                                                                            |
 |dry_mass_stem           |numeric  |g       |dry mass of whole stem segment                                                                                                    |                                                                                                                                                                            |
-|denisty_stem            |numeric  |g cm-3  |stem tissue density                                                                                                               |                                                                                                                                                                            |
+|density_stem            |numeric  |g cm-3  |stem tissue density                                                                                                               |                                                                                                                                                                            |
 |dry_mass_bark           |numeric  |g       |dry mass of bark                                                                                                                  |                                                                                                                                                                            |
 |displacement_mass_wood  |numeric  |g       |displacement mass of wood (stem with bark removed) when submerged in water                                                        |                                                                                                                                                                            |
 |dry_mass_wood           |numeric  |g       |dry mass of wood (stem with bark removed)                                                                                         |                                                                                                                                                                            |
-|denisty_wood            |numeric  |g cm-3  |wood density                                                                                                                      |                                                                                                                                                                            |
+|density_wood            |numeric  |g cm-3  |wood density                                                                                                                      |                                                                                                                                                                            |
 |notes                   |string   |        |notes                                                                                                                             |                                                                                                                                                                            |
 ### seed.csv 
 
@@ -237,7 +237,7 @@ Below is a list of the various files provided for this dataset, and the variable
 |:----------|:--------|:------|:---------------------------------------------------------|:--------------------------------------------------------------------|
 |species    |string   |       |species name                                              |names do not always match those in paper due to taxonomic revisions  |
 |family     |string   |       |family                                                    |                                                                     |
-|seed mass  |numeric  |mg     |seed dry mass                                             |                                                                     |
+|seed.mass  |numeric  |mg     |seed dry mass                                             |                                                                     |
 |source     |string   |       |source: either field or lietarture source where relevant  |                                                                     |
 ### Falster2005-SuppInfo.csv 
 

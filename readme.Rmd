@@ -1,4 +1,11 @@
 ```{r,results="asis",echo=FALSE}
+suppressMessages({
+library(knitr)
+library(markdown)
+library(rjson)
+library(pander)
+})
+
 opts_chunk$set(warnings = FALSE, width=200)
 
 # LOAD DETAILS
