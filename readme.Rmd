@@ -1,5 +1,5 @@
 ```{r,results="asis",echo=FALSE}
-opts_chunk$set(warnings = FALSE)
+opts_chunk$set(warnings = FALSE, width=200)
 
 # LOAD DETAILS
 details <- fromJSON(paste(readLines("details.JSON"), collapse=""))
@@ -73,7 +73,6 @@ for(n in names(details$files)){
 	print_header(basename(data$path), "###")
 	print_Line("contents", data$description)
 	print_Line("metadata", basename(data$metadata))
-	mytext <- kable(read.csv(data$metadata, stringsAsFactors=FALSE))
-	writeLines(mytext)
+	kable(read.csv(data$metadata, stringsAsFactors=FALSE))
 }
 ```

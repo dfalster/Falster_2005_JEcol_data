@@ -141,60 +141,12 @@ Below is a list of the various files provided for this dataset, and the variable
 |height     |numeric  |m      |plant height                                                        |either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)  |
 |diameter   |numeric  |cm     |diameter at 10% tree height, or breast height for trees > 20m tall  |                                                                                                              |
 |sampled    |bool     |       |was individual sampled for biomass and traits?                      |                                                                                                              |
-|variable   |type     |units  |description                                                         |notes                                                                                                         |
-|:----------|:--------|:------|:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
-|site       |string   |       |site where sample was taken                                         |                                                                                                              |
-|subsite    |string   |       |location withint site where sample was taken                        |                                                                                                              |
-|collector  |string   |       |who collected sample                                                |                                                                                                              |
-|spp        |string   |       |species name                                                        |                                                                                                              |
-|height     |numeric  |m      |plant height                                                        |either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)  |
-|diameter   |numeric  |cm     |diameter at 10% tree height, or breast height for trees > 20m tall  |                                                                                                              |
-|sampled    |bool     |       |was individual sampled for biomass and traits?                      |                                                                                                              |
 ### branch_biomass.csv 
 
 **contents**: Inidividual-level measuremnts of branch biomass taken from terminal meter of stem
 
 **metadata**: branch_biomass-metadata.csv
 
-|variable                    |type     |units      |description                                                             |
-|:---------------------------|:--------|:----------|:-----------------------------------------------------------------------|
-|site                        |string   |           |region where sample was taken                                           |
-|subsite                     |string   |           |local site where sample was taken                                       |
-|spp                         |string   |           |6 letter species code                                                   |
-|ind                         |string   |           |                                                                        |
-|leaf_type                   |string   |           |leaf type: compound or simple                                           |
-|height                      |numeric  |m          |height of plant                                                         |
-|leaf_size                   |numeric  |mm2        |leaf size                                                               |
-|lma                         |numeric  |g mm-2     |leaf mass per area                                                      |
-|stem_density_25             |numeric  |g cm-3     |stem tissue density for stem segment taken 25cm from branch tip         |
-|stem_density_100            |numeric  |g cm-3     |stem tissue density for stem segment taken 100cm from branch tip        |
-|segment                     |string   |           |segment number: 0,a,b,c,d,e,f,                                          |
-|length                      |numeric  |mm         |distance of cut along main stem                                         |
-|xsa                         |numeric  |mm2        |corss sectional area of stem                                            |
-|mass_stem_main              |numeric  |g          |mass of wood on main stem                                               |
-|mass_stem_side              |numeric  |g          |mass of wood on side branches                                           |
-|mass_stem_total             |numeric  |g          |mass of all wood                                                        |
-|mass_leaf_main              |numeric  |g          |mass of leaf on main stem                                               |
-|mass_leaf_side              |numeric  |g          |mass of leaf on side branches                                           |
-|mass_leaf_total             |numeric  |g          |mass of all leaf                                                        |
-|area_leaf_main              |numeric  |mm2        |area of leaf on main stem                                               |
-|area_leaf_side              |numeric  |mm2        |area of leaf on side branches                                           |
-|area_leaf_total             |numeric  |mm2        |area of all leaf                                                        |
-|number_leaf_main            |numeric  |number     |number of leaves on main stem                                           |
-|number_leaf_total           |numeric  |number     |number of leaves total                                                  |
-|main_leaf_mass_per_length   |numeric  |g mm-1     |leaf mass on main stem per unit length of main stem                     |
-|main_stem_mass_per_length   |numeric  |g mm-1     |stem mass on main stem per unit length of main stem                     |
-|main_all_mass_per_length    |numeric  |g mm-1     |total mass on main stem per unit length of main stem                    |
-|total_leaf_mass_per_length  |numeric  |g mm-1     |leaf mass on main stem and side branches per unit length of main stem   |
-|total_stem_mass_per_length  |numeric  |g mm-1     |stem mass on main stem and side branches per unit length of main stem   |
-|total_all_mass_per_length   |numeric  |g mm-1     |total mass on main stem and side branches per unit length of main stem  |
-|main_leaf_area_per_length   |numeric  |mm2  mm-1  |leaf are on main stem per unit length of main stem                      |
-|total_area_per_length       |numeric  |mm2  mm-1  |leaf area on main stem and side branches per unit length of main stem   |
-|leaf_no_per_length          |numeric  |mm-1       |number of leaves per unit length of main stem                           |
-|main_LMF                    |numeric  |g g-1      |leaf mass fraction of main stem                                         |
-|total_LMF                   |numeric  |g g-1      |leaf mass fraction of main stem and side branches                       |
-|main_LAR                    |numeric  |mm2 g-1    |leaf area per total mass for of main stem                               |
-|total_LAR                   |numeric  |mm2 g-1    |leaf area per total mass for main stem and side branches                |
 |variable                    |type     |units      |description                                                             |
 |:---------------------------|:--------|:----------|:-----------------------------------------------------------------------|
 |site                        |string   |           |region where sample was taken                                           |
@@ -255,41 +207,12 @@ Below is a list of the various files provided for this dataset, and the variable
 |no_leaflets   |numeric  |number   |total number of leaflets sampled                                                         |
 |leaflet_size  |numeric  |mm2      |average area per leaflet, = (total_area - rachis_area)/ no_leaflets                      |
 |lma_leaflet   |numeric  |mg mm-2  |leaf mass per area for leaflet = 1000*(total_mass-rachis_mass)/(total_area-rachis_area)  |
-|variable      |type     |units    |description                                                                              |
-|:-------------|:--------|:--------|:----------------------------------------------------------------------------------------|
-|spp           |string   |         |species                                                                                  |
-|indiv         |string   |         |individual                                                                               |
-|leaf_type     |string   |         |leaf type: simple or compound                                                            |
-|no_leaves     |numeric  |number   |number of leaves sampled                                                                 |
-|total_mass    |numeric  |g        |total mass of leaves                                                                     |
-|total_area    |numeric  |mm2      |total area of leaves                                                                     |
-|leaf_size     |numeric  |mm2      |average area per leaf, = total_area / no_leaves                                          |
-|lma_leaf      |numeric  |mg mm-2  |leaf mass per area for entire leaf = 1000*total_mass/total_area                          |
-|rachis_mass   |numeric  |g        |mass of rachis (zero for simple leaves)                                                  |
-|rachis_area   |numeric  |mm2      |projected area of rachis (zero for simple leaves)                                        |
-|no_leaflets   |numeric  |number   |total number of leaflets sampled                                                         |
-|leaflet_size  |numeric  |mm2      |average area per leaflet, = (total_area - rachis_area)/ no_leaflets                      |
-|lma_leaflet   |numeric  |mg mm-2  |leaf mass per area for leaflet = 1000*(total_mass-rachis_mass)/(total_area-rachis_area)  |
 ### wood.csv 
 
 **contents**: Inidividual-level measuremnts of wood traits
 
 **metadata**: wood-metadata.csv
 
-|variable                |type     |units   |description                                                                                                                       |notes                                                                                                                                                                       |
-|:-----------------------|:--------|:-------|:---------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|spp                     |string   |        |6 letter species code                                                                                                             |see species list for translastion                                                                                                                                           |
-|indiv                   |string   |        |individual                                                                                                                        |values 1-3 are were taken from individuals where biomass of terminal meter of stem was also harevtesed (see biomass dataset), while 'x' is used for additional individuals  |
-|segment                 |string   |        |location of sample. Samples were taken 250mm & 1000mm from tip of a leading branch; and also at base of plant with a small core.  |                                                                                                                                                                            |
-|length                  |numeric  |        |length of sample                                                                                                                  |                                                                                                                                                                            |
-|displacement_mass_stem  |numeric  |g       |displacement mass of whole stem segment when submerged in water                                                                   |                                                                                                                                                                            |
-|dry_mass_stem           |numeric  |g       |dry mass of whole stem segment                                                                                                    |                                                                                                                                                                            |
-|denisty_stem            |numeric  |g cm-3  |stem tissue density                                                                                                               |                                                                                                                                                                            |
-|dry_mass_bark           |numeric  |g       |dry mass of bark                                                                                                                  |                                                                                                                                                                            |
-|displacement_mass_wood  |numeric  |g       |displacement mass of wood (stem with bark removed) when submerged in water                                                        |                                                                                                                                                                            |
-|dry_mass_wood           |numeric  |g       |dry mass of wood (stem with bark removed)                                                                                         |                                                                                                                                                                            |
-|denisty_wood            |numeric  |g cm-3  |wood density                                                                                                                      |                                                                                                                                                                            |
-|notes                   |string   |        |notes                                                                                                                             |                                                                                                                                                                            |
 |variable                |type     |units   |description                                                                                                                       |notes                                                                                                                                                                       |
 |:-----------------------|:--------|:-------|:---------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |spp                     |string   |        |6 letter species code                                                                                                             |see species list for translastion                                                                                                                                           |
@@ -316,43 +239,12 @@ Below is a list of the various files provided for this dataset, and the variable
 |family     |string   |       |family                                                    |                                                                     |
 |seed mass  |numeric  |mg     |seed dry mass                                             |                                                                     |
 |source     |string   |       |source: either field or lietarture source where relevant  |                                                                     |
-|variable   |type     |units  |description                                               |notes                                                                |
-|:----------|:--------|:------|:---------------------------------------------------------|:--------------------------------------------------------------------|
-|species    |string   |       |species name                                              |names do not always match those in paper due to taxonomic revisions  |
-|family     |string   |       |family                                                    |                                                                     |
-|seed mass  |numeric  |mg     |seed dry mass                                             |                                                                     |
-|source     |string   |       |source: either field or lietarture source where relevant  |                                                                     |
 ### Falster2005-SuppInfo.csv 
 
 **contents**: Appendix 1 from published paper, containing mean trait values for 45 woody shrub / tree species from Queensland's Wet Tropics. This data is available here http://www.blackwellpublishing.com/products/journals/suppmat/JEC/JEC992/JEC992sm.htm as a word document, but has been reproduced here in a more useful format.
 
 **metadata**: Falster2005-SuppInfo-metadata.csv
 
-|variable     |type     |units                                                                                                                   |description                                                                 |
-|:------------|:--------|:-----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-|spp          |string   |                                                                                                                        |6-letter species code                                                       |
-|Species      |string   |                                                                                                                        |species scientific name                                                     |
-|Family       |string   |                                                                                                                        |species scientific family                                                   |
-|Grp          |string   |succ = successional gradient; light = light gradient                                                                    |Grouping used in analysis. See main text for details                        |
-|Hpot_method  |string   |maxobs = estimated as the 95th percentile observed height;  HD = estimated by fitting an curve to height-diameter data  |method used to estimate potential height                                    |
-|Hpot         |numeric  |m                                                                                                                       |potential height                                                            |
-|HD_n         |numeric  |number                                                                                                                  |number of ondividuals used to fit height-diameter relationship              |
-|HD_r2        |numeric  |                                                                                                                        |r2 of fitted height-diameter relationship                                   |
-|HD_a         |numeric  |                                                                                                                        |parameter of fitted height-diameter relationship                            |
-|HD_b         |numeric  |                                                                                                                        |parameter of fitted height-diameter relationship                            |
-|LMA          |numeric  |mg mm-2                                                                                                                 | leaf mass per area                                                         |
-|Nmass        |numeric  |mg mg-1                                                                                                                 |leaf nitrogen content                                                       |
-|LS           |numeric  |mm2                                                                                                                     |leaf size                                                                   |
-|LFLT         |numeric  |mm2                                                                                                                     |leaflet size                                                                |
-|TwXSA        |numeric  |mm2                                                                                                                     |cross sectional area of branch tip                                          |
-|WD           |numeric  |mg mm-3                                                                                                                 |wood density                                                                |
-|BMF          |numeric  |                                                                                                                        |branch mass fraction, averaged across the terminal meter of stem            |
-|LL           |numeric  |mm                                                                                                                      |distance to last leaf on main stem                                          |
-|SS           |numeric  |mg                                                                                                                      |seed size                                                                   |
-|SMPL_tip     |numeric  |mg mm-1                                                                                                                 |stem mass per unit stem length at branch tip                                |
-|LMPL_tip     |numeric  |mg mm-1                                                                                                                 |leaf mass per unit stem length at branch tip                                |
-|SMPL_1m      |numeric  |mg mm-1                                                                                                                 |stem mass per unit stem length, averaged across the terminal meter of stem  |
-|LMPL_1m      |numeric  |mg mm-1                                                                                                                 |leaf mass per unit stem length, averaged across the terminal meter of stem  |
 |variable     |type     |units                                                                                                                   |description                                                                 |
 |:------------|:--------|:-----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
 |spp          |string   |                                                                                                                        |6-letter species code                                                       |
