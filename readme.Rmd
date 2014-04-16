@@ -4,11 +4,6 @@ opts_chunk$set(warnings = FALSE)
 # LOAD DETAILS
 details <- fromJSON(paste(readLines("details.JSON"), collapse=""))
 
-# FUNCTIONS FOR FORMATTING TABLES
-pandify <- function(data.table){
-	pandoc.table.return(data.table, style="grid", split.tables=300, split.cells = 50, justify = "left")
-}
-
 print_Line <- function(name, value) writeLines(paste0("**",name,"**: ", value, "\n"))
 
 print_header <- function(name, hash="##") writeLines(paste(hash, name,"\n"))
@@ -33,6 +28,10 @@ print_lines_with_header_simple <-function(x, hash="###"){
 }
 
 print_header(paste0("Data from \"",  details$publication$title, "\""), hash="#")
+
+if(!is.null(details$intro_statement))
+	writeLines(paste(details$intro_statement, "\n"))
+
 ```
 ## Publication
 
@@ -74,7 +73,7 @@ for(n in names(details$files)){
 	print_header(basename(data$path), "###")
 	print_Line("contents", data$description)
 	print_Line("metadata", basename(data$metadata))
-	mytext <- pandify(read.csv(data$metadata, stringsAsFactors=FALSE))
+	mytext <- kable(read.csv(data$metadata, stringsAsFactors=FALSE))
 	writeLines(mytext)
 }
 ```

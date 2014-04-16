@@ -1,27 +1,31 @@
 {
   "creator":{
-    "Daniel Falster":{
+    "Daniel":{
+      "name": "Daniel Falster",
       "email": "daniel.falster@mq.edu.au",
       "phone": "+61-2-9850-9258",
+      "organization": "Macquarie University",
       "address": "Biological Sciences",
-      "city": "North Ryde",
+      "city": "Macquarie University",
       "state": "NSW",
       "postalCode": "2109",
       "country": "Australia"
       }
   },
   "associatedParty":{
-      "Mark Westoby":{
+    "Mark":{
+      "name": "Mark Westoby",
       "email": "mark.westoby@mq.edu.au",
       "phone": "+61-2-9850-8196",
+      "organization": "Macquarie University",
       "address": "Biological Sciences",
-      "city": "North Ryde",
+      "city": "Macquarie University",
       "state": "NSW",
       "postalCode": "2109",
       "country": "Australia"
       }
   },
-  "intro_statement": "The data were deposited in dryad 8 years after publication of the article. While I have endeavoured to check the details of the archive, there may be some small differences to the published paper due to the time delay between publishing and data release.",
+  "intro_statement": "NOTE:\n\n- This file was generated using the script found [here](https://github.com/dfalster/Falster_2005_JEcol_data/blob/master/readme.Rmd).\n- These data were made available 8 years after publication of the article. While I have endeavoured to check the details of the archive, there may be some small differences to the published paper due to the time delay between publishing and data release.",
   "publication":{
     "date": "2005",
     "title": "Alternative height strategies among 45 dicot rain forest species from tropical Queensland, Australia",
