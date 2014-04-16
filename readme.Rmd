@@ -6,7 +6,7 @@ details <- fromJSON(paste(readLines("details.JSON"), collapse=""))
 
 # FUNCTIONS FOR FORMATTING TABLES
 pandify <- function(data.table){
-	pandoc.table.return(data.table, styl="multiline", split.tables= 200, split.cells = 50, justify = "left")
+	pandoc.table.return(data.table, style="grid", split.tables=300, split.cells = 50, justify = "left")
 }
 
 print_Line <- function(name, value) writeLines(paste0("**",name,"**: ", value, "\n"))
@@ -32,7 +32,7 @@ print_lines_with_header_simple <-function(x, hash="###"){
 	}
 }
 
-print_header(paste("Data from \"",  details$publication$title, "\""), hash="#")
+print_header(paste0("Data from \"",  details$publication$title, "\""), hash="#")
 ```
 ## Publication
 
@@ -71,7 +71,6 @@ Below is a list of the various files provided for this dataset, and the variable
 
 for(n in names(details$files)){
 	data <- details$files[[n]]
-	writeLines("\\newpage \n")
 	print_header(basename(data$path), "###")
 	print_Line("contents", data$description)
 	print_Line("metadata", basename(data$metadata))

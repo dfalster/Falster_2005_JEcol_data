@@ -8,6 +8,6 @@ dry_mass_stem,numeric,g,dry mass of whole stem segment,
 denisty_stem,numeric,g cm-3,stem tissue density,
 dry_mass_bark,numeric,g,dry mass of bark,
 displacement_mass_wood,numeric,g,displacement mass of wood (stem with bark removed) when submerged in water,
-dry_mass_wood,numeric,g,dry mass of wood (stem with bark removed),#NAME?
+dry_mass_wood,numeric,g,dry mass of wood (stem with bark removed),
 denisty_wood,numeric,g cm-3,wood density,
 notes,string,,notes,
