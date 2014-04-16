@@ -5,4 +5,4 @@ collector,string,,who collected sample,
 spp,string,,species name,
 height,numeric,m,plant height,"either emasured directly, or using a trigonometric method (taking angle to top of tree and distance to base)"
 diameter,numeric,cm,"diameter at 10% tree height, or breast height for trees > 20m tall",
-sampled,bool,,was individual sampled for biomass and traits?,
+sampled,bool,,was individual sampled for biomass and traits,

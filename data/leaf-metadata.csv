@@ -1,6 +1,6 @@
 variable,type,units,description
 spp,string,,species
-indiv,string,,individual
+indiv,numeric,,individual
 leaf_type,string,,leaf type: simple or compound
 no_leaves,numeric,number,number of leaves sampled
 total_mass,numeric,g,total mass of leaves

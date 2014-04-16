@@ -2,7 +2,7 @@ variable,type,units,description
 site,string,,region where sample was taken
 subsite,string,,local site where sample was taken
 spp,string,,6 letter species code
-ind,string,,
+ind,numeric,,individual
 leaf_type,string,,leaf type: compound or simple
 height,numeric,m,height of plant
 leaf_size,numeric,mm2,leaf size
