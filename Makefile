@@ -1,5 +1,5 @@
 
-all: readme.md
+all: readme.md readme.html
 
 %.md: %.Rmd
 	Rscript -e 'tmp <- lapply(c("knitr", "markdown", "rjson", "pander"), require, character.only=TRUE, quietly  = TRUE);  knit("$<", output = "$@")'
