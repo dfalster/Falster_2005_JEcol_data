@@ -1,14 +1,14 @@
-"variable","units","description"
-"spp","","species"
-"indiv","","individual"
-"leaf_type","","leaf type: simple or compound"
-"no_leaves","","number of leaves sampled"
-"total_mass","g","total mass of leaves"
-"total_area","mm2","total area of leaves"
-"leaf_size","mm2","average area per leaf, = total_area / no_leaves"
-"lma_leaf","mg mm-2","leaf mass per area for entire leaf = 1000*total_mass/total_area"
-"rachis_mass","g","mass of rachis (zero for simple leaves)"
-"rachis_area","mm2","projected area of rachis (zero for simple leaves)"
-"no_leaflets","","total number of leaflets sampled"
-"leaflet_size","mm2","average area per leaflet, = (total_area - rachis_area)/ no_leaflets"
-"lma_leaflet","mg mm-2","leaf mass per area for leaflet = 1000*(total_mass-rachis_mass)/(total_area-rachis_area)"
+variable,type,units,description
+spp,string,,species
+indiv,string,,individual
+leaf_type,string,,leaf type: simple or compound
+no_leaves,numeric,number,number of leaves sampled
+total_mass,numeric,g,total mass of leaves
+total_area,numeric,mm2,total area of leaves
+leaf_size,numeric,mm2,"average area per leaf, = total_area / no_leaves"
+lma_leaf,numeric,mg mm-2,leaf mass per area for entire leaf = 1000*total_mass/total_area
+rachis_mass,numeric,g,mass of rachis (zero for simple leaves)
+rachis_area,numeric,mm2,projected area of rachis (zero for simple leaves)
+no_leaflets,numeric,number,total number of leaflets sampled
+leaflet_size,numeric,mm2,"average area per leaflet, = (total_area - rachis_area)/ no_leaflets"
+lma_leaflet,numeric,mg mm-2,leaf mass per area for leaflet = 1000*(total_mass-rachis_mass)/(total_area-rachis_area)

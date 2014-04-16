@@ -1,38 +1,38 @@
-variable,units,description
-site,,region where sample was taken
-subsite,,local site where sample was taken
-spp,,6 letter species code
-ind,,
-leaf_type,,leaf type: compound or simple
-height,m,height of plant
-leaf_size,mm2,leaf size
-lma,g mm-2,leaf mass per area
-stem_density_25,g cm-3,stem tissue density for stem segment taken 25cm from branch tip
-stem_density_100,g cm-3,stem tissue density for stem segment taken 100cm from branch tip
-segment,,"segment number: 0,a,b,c,d,e,f,"
-length,mm,distance of cut along main stem
-xsa,mm2,corss sectional area of stem
-mass_stem_main,g,mass of wood on main stem
-mass_stem_side,g,mass of wood on side branches
-mass_stem_total,g,mass of all wood
-mass_leaf_main,g,mass of leaf on main stem
-mass_leaf_side,g,mass of leaf on side branches
-mass_leaf_total,g,mass of all leaf
-area_leaf_main,mm2,area of leaf on main stem
-area_leaf_side,mm2,area of leaf on side branches
-area_leaf_total,mm2,area of all leaf
-number_leaf_main,,number of leaves on main stem
-number_leaf_total,,number of leaves total
-main_leaf_mass_per_length,g mm-1,leaf mass on main stem per unit length of main stem
-main_stem_mass_per_length,g mm-1,stem mass on main stem per unit length of main stem
-main_all_mass_per_length,g mm-1,total mass on main stem per unit length of main stem
-total_leaf_mass_per_length,g mm-1,leaf mass on main stem and side branches per unit length of main stem
-total_stem_mass_per_length,g mm-1,stem mass on main stem and side branches per unit length of main stem
-total_all_mass_per_length,g mm-1,total mass on main stem and side branches per unit length of main stem
-main_leaf_area_per_length,mm2  mm-1,leaf are on main stem per unit length of main stem
-total_area_per_length,mm2  mm-1,leaf area on main stem and side branches per unit length of main stem
-leaf_no_per_length,mm-1,number of leaves per unit length of main stem
-main_LMF,g g-1,leaf mass fraction of main stem
-total_LMF,g g-1,leaf mass fraction of main stem and side branches
-main_LAR,mm2 g-1,leaf area per total mass for of main stem
-total_LAR,mm2 g-1,leaf area per total mass for main stem and side branches
+variable,type,units,description
+site,string,,region where sample was taken
+subsite,string,,local site where sample was taken
+spp,string,,6 letter species code
+ind,string,,
+leaf_type,string,,leaf type: compound or simple
+height,numeric,m,height of plant
+leaf_size,numeric,mm2,leaf size
+lma,numeric,g mm-2,leaf mass per area
+stem_density_25,numeric,g cm-3,stem tissue density for stem segment taken 25cm from branch tip
+stem_density_100,numeric,g cm-3,stem tissue density for stem segment taken 100cm from branch tip
+segment,string,,"segment number: 0,a,b,c,d,e,f,"
+length,numeric,mm,distance of cut along main stem
+xsa,numeric,mm2,corss sectional area of stem
+mass_stem_main,numeric,g,mass of wood on main stem
+mass_stem_side,numeric,g,mass of wood on side branches
+mass_stem_total,numeric,g,mass of all wood
+mass_leaf_main,numeric,g,mass of leaf on main stem
+mass_leaf_side,numeric,g,mass of leaf on side branches
+mass_leaf_total,numeric,g,mass of all leaf
+area_leaf_main,numeric,mm2,area of leaf on main stem
+area_leaf_side,numeric,mm2,area of leaf on side branches
+area_leaf_total,numeric,mm2,area of all leaf
+number_leaf_main,numeric,number,number of leaves on main stem
+number_leaf_total,numeric,number,number of leaves total
+main_leaf_mass_per_length,numeric,g mm-1,leaf mass on main stem per unit length of main stem
+main_stem_mass_per_length,numeric,g mm-1,stem mass on main stem per unit length of main stem
+main_all_mass_per_length,numeric,g mm-1,total mass on main stem per unit length of main stem
+total_leaf_mass_per_length,numeric,g mm-1,leaf mass on main stem and side branches per unit length of main stem
+total_stem_mass_per_length,numeric,g mm-1,stem mass on main stem and side branches per unit length of main stem
+total_all_mass_per_length,numeric,g mm-1,total mass on main stem and side branches per unit length of main stem
+main_leaf_area_per_length,numeric,mm2  mm-1,leaf are on main stem per unit length of main stem
+total_area_per_length,numeric,mm2  mm-1,leaf area on main stem and side branches per unit length of main stem
+leaf_no_per_length,numeric,mm-1,number of leaves per unit length of main stem
+main_LMF,numeric,g g-1,leaf mass fraction of main stem
+total_LMF,numeric,g g-1,leaf mass fraction of main stem and side branches
+main_LAR,numeric,mm2 g-1,leaf area per total mass for of main stem
+total_LAR,numeric,mm2 g-1,leaf area per total mass for main stem and side branches

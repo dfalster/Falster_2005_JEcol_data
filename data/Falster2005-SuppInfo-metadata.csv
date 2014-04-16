@@ -1,24 +1,24 @@
-variable,units,description
-spp,,6-letter species code
-Species,,species name
-Family,,family
-Grp,,Grouping used in analysis. See main text for details: succ = successional gradient; light = light gradient
-Hpot_method,,method used to estimate potential height: maxobs = estimated as the 95th percentile observed height;  HD = estimated by fitting an curve to height-diameter data
-Hpot,m,potential height
-HD_n,,number of ondividuals used to fit height-diameter relationship
-HD_r2,,r2 of fitted height-diameter relationship
-HD_a,,parameter of fitted height-diameter relationship
-HD_b,,parameter of fitted height-diameter relationship
-LMA,mg mm-2, leaf mass per area
-Nmass,mg mg-1,leaf nitrogen content
-LS,mm2,leaf size
-LFLT,mm2,leaflet size
-TwXSA,mm2,cross sectional area of branch tip
-WD,mg mm-3,wood density
-BMF,,"branch mass fraction, averaged across the terminal meter of stem"
-LL,mm,distance to last leaf on main stem
-SS,mg,seed size
-SMPL_tip,mg mm-1,stem mass per unit stem length at branch tip
-LMPL_tip,mg mm-1,leaf mass per unit stem length at branch tip
-SMPL_1m,mg mm-1,"stem mass per unit stem length, averaged across the terminal meter of stem"
-LMPL_1m,mg mm-1,"leaf mass per unit stem length, averaged across the terminal meter of stem"
+variable,type,units,description
+spp,string,,6-letter species code
+Species,string,,species scientific name
+Family,string,,species scientific family
+Grp,string,succ = successional gradient; light = light gradient,Grouping used in analysis. See main text for details
+Hpot_method,string,maxobs = estimated as the 95th percentile observed height;  HD = estimated by fitting an curve to height-diameter data,method used to estimate potential height
+Hpot,numeric,m,potential height
+HD_n,numeric,number,number of ondividuals used to fit height-diameter relationship
+HD_r2,numeric,,r2 of fitted height-diameter relationship
+HD_a,numeric,,parameter of fitted height-diameter relationship
+HD_b,numeric,,parameter of fitted height-diameter relationship
+LMA,numeric,mg mm-2, leaf mass per area
+Nmass,numeric,mg mg-1,leaf nitrogen content
+LS,numeric,mm2,leaf size
+LFLT,numeric,mm2,leaflet size
+TwXSA,numeric,mm2,cross sectional area of branch tip
+WD,numeric,mg mm-3,wood density
+BMF,numeric,,"branch mass fraction, averaged across the terminal meter of stem"
+LL,numeric,mm,distance to last leaf on main stem
+SS,numeric,mg,seed size
+SMPL_tip,numeric,mg mm-1,stem mass per unit stem length at branch tip
+LMPL_tip,numeric,mg mm-1,leaf mass per unit stem length at branch tip
+SMPL_1m,numeric,mg mm-1,"stem mass per unit stem length, averaged across the terminal meter of stem"
+LMPL_1m,numeric,mg mm-1,"leaf mass per unit stem length, averaged across the terminal meter of stem"
