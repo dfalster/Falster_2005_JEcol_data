@@ -34,7 +34,7 @@ print_lines_with_header_simple <-function(x, hash="###"){
 	}
 }
 
-print_header(paste0("Data from \"",  details$publication$title, "\""), hash="#")
+print_header(paste0("Data from: ",  details$publication$title), hash="#")
 
 if(!is.null(details$intro_statement))
 	writeLines(paste(details$intro_statement, "\n"))

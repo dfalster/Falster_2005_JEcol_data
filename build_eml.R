@@ -16,8 +16,6 @@ library(rjson)
 # load details
 details <- fromJSON(paste(readLines("details.JSON"), collapse=""))
 
-dir.create("EML")
-
 # Takes a list with items path, metatdata,
 make_dataTable <- function(x){
 
@@ -84,7 +82,7 @@ spp <- sapply(strsplit(details$coverage$scientific_names, " "), function(x) past
 
 # Assemble the EML dataset:
 dataset <- new("dataset",
-                title =  details$publication$title,
+                title =  paste0('Data from: ',  details$publication$title),
                 creator = creators,
                 contact = contact,
                 pubDate =  details$publication$date,
@@ -101,8 +99,7 @@ dataset <- new("dataset",
 eml <- new("eml",
             packageId = uuid::UUIDgenerate(),
             system = "uuid", # type of identifier
-            dataset = dataset,
-            additionalMetadata = c(new("additionalMetadata"))
+            dataset = dataset
           )
 
 # Write out our EML object to an XML file:

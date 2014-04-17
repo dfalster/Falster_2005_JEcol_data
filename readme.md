@@ -1,8 +1,9 @@
-# Data from "Alternative height strategies among 45 dicot rain forest species from tropical Queensland, Australia" 
+# Data from: Alternative height strategies among 45 dicot rain forest species from tropical Queensland, Australia 
 
 NOTE:
 
 - This file was generated using the script found [here](https://github.com/dfalster/Falster_2005_JEcol_data/blob/master/readme.Rmd).
+- metadata are avaible in machine readable format in the files: EML.xml, details.JSON, *-metadata.csv
 - These data were made available 8 years after publication of the article. While I have endeavoured to check the details of the archive, there may be some small differences to the published paper due to the time delay between publishing and data release. 
 
 ## Publication

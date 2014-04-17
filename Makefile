@@ -1,10 +1,16 @@
 
-all: readme.md EML.xml
+all: readme.md EML.xml readme.html
 
-%.md: %.Rmd
+%.md: %.Rmd details.JSON
 	Rscript -e 'knitr::knit("$<", output = "$@")'
 
-EML.xml: build_eml.R
+%.html: %.md
+	Rscript -e 'markdown::markdownToHTML("$<", "$@")'
+
+EML.xml: build_eml.R details.JSON
+	Rscript $<
+
+publish: publish.R EML.xml readme.html
 	Rscript $<
 
 clean:
