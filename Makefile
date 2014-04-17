@@ -1,13 +1,14 @@
 
-all: readme.md readme_EML.xml
+all: readme.md EML.xml
 
 %.md: %.Rmd
 	Rscript -e 'knitr::knit("$<", output = "$@")'
 
-readme_EML.xml: build_eml.R
+EML.xml: build_eml.R
 	Rscript $<
 
 clean:
-	rm readme.md
+	git checkout -- readme.md
+	rm -f *.csv *.xml *.html
 
 .PHONY: all clean
