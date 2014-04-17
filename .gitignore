@@ -4,3 +4,4 @@
 *.html
 ms
 notebook
+.httr-oauth

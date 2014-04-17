@@ -63,33 +63,38 @@ This dataset is released to the public under the Creative Commons CC0 license. A
 **country**: Australia
 
 
+## Location
+**Geographic description**: The study was carried out in tropical rain forest vegetation of north-eastern Australia. We restricted our sampling to regions of complex mesophyll vine forest found at Cape Tribulation (16°06'S, 145°27'E, 25m a.s.l.) and on the Atherton tablelands (17°07'S, 145°39'E, 800m a.s.l.). Rainfall is high throughout the region (3500mm yr-1 Cape Tribulation, ~2000 mm yr-1 Atherton) supporting a moderate to high level of foliage cover (leaf area index: 4-5 m2 m-2). 
+
+**Atherton area - Sutties Gap Rd**: -17.642632, 145.638027
+
+**Atherton area - Robson Creek, Danbulla Forest Reserve**: -17.125042, 145.632706
+
+**Atherton area - Kauria Creek, Danbulla Forest Reserve**: -17.132793, 145.595927
+
+**Atherton area - Mt baldy, Herberton**: -17.37, 145.37
+
+**Cape Tribulation area - Oliver Creek**: -16.143866, 145.430982
+
+**Cape Tribulation area - Roadside forest**: -16.081445, 145.463276
+
+**Cape Tribulation area - Australian Canopy Crane**: -16.102634, 145.448057
+
+
+## Dates
+Sampling was conducted in the period 2002-11-21 to 2002-12-10 
+
+
+## Species
+**Species**: Acacia celsa, Acmena graveolens, Acronychia acidula, Aleurites rockinghamensis, Alphitonia petriei, Alstonia scholaris, Argyrodendron peralatum, Atractocarpus hirtus, Brombya platynema, Cardwellia sublimis, Castanospermum australe, Cleistanthus myrianthus, Cryptocarya laevigata, Cryptocarya mackinnoniana, Cryptocarya murrayi, Dendrocnide moroides, Elaeocarpus grandis, Endiandra leptodendron, Endiandra microneura, Gillbeea adenopetala, Glochidion hylandii, Haplostichanthus sp Cooper Creek, Harpullia rhyticarpa, Hernandia albiflora, Homalanthus novoguineensis, Ixora biflora, Lasianthus strigosus, Litsea leefeana, Macaranga tanarius, Mallotus mollissimus, Medicosma sessiliflora, Melastoma cyanoides, Melicope elleryana, Myristica insipida, Neolitsea dealbata, Pittosporum rubiginosum, Polyscias australiana, Psychotria dallachiana, Psychotria sp Utchee Creek, Quassia baileyana, Rhodomyrtus trineura, Rockinghamia angustifolia, Syzygium gustavioides, Syzygium sayeri, Trema aspera
+
+
 ## Methods
 
-### Dates 
-
-Sampling was conducted during 2002-2003.
-
-### Sites 
-
-The study was carried out in tropical rain forest vegetation of north-eastern Australia. We restricted our sampling to regions of complex mesophyll vine forest found at Cape Tribulation (16°06'S, 145°27'E, 25m a.s.l.) and on the Atherton tablelands (17°07'S, 145°39'E, 800m a.s.l.). Rainfall is high throughout the region (3500mm yr-1 Cape Tribulation, ~2000 mm yr-1 Atherton) supporting a moderate to high level of foliage cover (leaf area index: 4-5 m2 m-2). The file 'branch_biomass.csv' indicates subsites where individual plants were sampled. The values given are as follows: 
-
-ATHERON AREA
-
-- k-tree: sampling off Sutties Gap Rd (-17.642632, 145.638027)
-- robson: sampling near Robson Creek site in Danbulla Forest Reserve on Atherton Tablelands (-17.125042, 145.632706)
-- kauri: sampling near Kauria Creek day use area in Danbulla Forest Reserve on Atherton Tablelands (-17.132793, 145.595927)
-- mt baldy: sampling near Herberton on Atherton Tablelands (approx only -17.37,145.37)
-- mt edith: records lost.
-
-CAPE TRIBULATION AREA
-
-- oliver: sampling in forest to south of Oliver Creek, near CSIRO plot (-16.143866, 145.430982)
-- cape: sampling in area near roadside around cape tribulation (-16.081445, 145.463276)
-- crane: sampling in forest surrounding the Australian Canopy Crane, located at 40 m elevation in lowland tropical rainforest at Cape (-16.102634, 145.448057).
 
 ### Species selection 
 
-Tropical rain forest species are thought to differentiate out along both light and successional gradients and were sampled accordingly. Preference was given to sampling species found widely throughout the region. Successional species were defined as those requiring a high light environment at maturity (large gap or top of the canopy). For simplicity, we also assume species replacement at the top of the canopy corresponds to an increase in potential height, such that height is coordinated with successional status. Nineteen species, ranging from early to late successional status, were selected using published sources. Species selected to represent the light gradient establish and mature in closed forest, where successional species are assumed absent. For inclusion in this set we required that a species was known to establish and persist at low light levels, as indicated either by published sources (Hyland et al., 1999; Osunkoya, 1996) or by scientists familiar with the vegetation (A Graham, J Wells: CSIRO Atherton; R Jensen). Twenty-six species, experiencing a range of light levels at maturity, from high (canopy trees) to low light (understorey shrubs), were included.
+Tropical rain forest species are thought to differentiate out along both light and successional gradients and were sampled accordingly. Preference was given to sampling species found widely throughout the region. Successional species were defined as those requiring a high light environment at maturity (large gap or top of the canopy). For simplicity, we also assume species replacement at the top of the canopy corresponds to an increase in potential height, such that height is coordinated with successional status. Nineteen species, ranging from early to late successional status, were selected using published sources. Species selected to represent the light gradient establish and mature in closed forest, where successional species are assumed absent. For inclusion in this set we required that a species was known to establish and persist at low light levels, as indicated either by published sources (Hyland et al., 1999; Osunkoya, 1996) or by scientists familiar with the vegetation (A Graham, J Wells: CSIRO Atherton; R Jensen). Twenty-six species, experiencing a range of light levels at maturity, from high (canopy trees) to low light (understorey shrubs), were included. The file 'branch_biomass.csv' indicates subsites where individual plants were sampled.
 
 
 ### Species traits 

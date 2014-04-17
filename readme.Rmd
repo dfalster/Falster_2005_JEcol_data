@@ -63,7 +63,26 @@ if(!is.null(details$associatedParty)){
 }
 ```
 
+## Location
+```{r,results="asis",echo=FALSE}
+print_Line("Geographic description", details$coverage$geographic_description)
+
+for(l in names(details$coverage$locations))
+	print_Line(l, paste(details$coverage$locations[[l]], collapse=', '))
+```
+
+## Dates
+```{r,results="asis",echo=FALSE}
+writeLines(paste("Sampling was conducted in the period", details$coverage$dates[1],"to",details$coverage$dates[2], "\n"))
+```
+
+## Species
+```{r,results="asis",echo=FALSE}
+print_Line("Species", paste( details$coverage$scientific_names, collapse=', '))
+```
+
 ## Methods
+
 
 ```{r,results="asis",echo=FALSE}
 print_lines_with_header_simple(details$methods)
